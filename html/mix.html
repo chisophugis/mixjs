@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>MIX.js</title>
+    <link rel="stylesheet" href="mix.css" />
+  </head>
+  <body>
+  <!-- all code written by Sean Silva -->
+
+    <div id="asm">
+      <header>MIXAL editor</header>
+      <textarea rows=30 id=asm_src></textarea>
+    </div>
+
+    <!-- maybe model the design/layout off of pg. 126 of TAOCP Vol. 1 -->
+    <div id=processor>
+      <header>Processor</header>
+      <div id=proc_state>
+        <table><tbody id=registers></tbody></table>
+        <ul id=indicators></ul>
+      </div>
+    </div>
+
+    <div id=memory>
+      <header>Memory</header>
+      <table id=mem_tab>
+        <tbody id=mem_cells></tbody>
+      </table>
+    </div>
+
+    <pre id=line_printer></pre>
+    <div id=bottom_bar>
+      <div id=controls>
+        <input type=button value="Run to Completion" id=complete_button />
+        <input type=button value="Reset & Assemble MIXAL" id=assemble_button />
+        <input type=button value="Cycle and Redraw" id=cycle_button />
+      </div>
+    </div>
+
+    <script src="mix_vm.js"></script>
+    <script src="mix_asm.js"></script>
+    <script src="mix_io.js"></script>
+    <script src="mix_editor.js"></script>
+    <script src="mix_interface.js"></script>
+    <script src="mix_init.js"></script>
+  </body>
+</html>

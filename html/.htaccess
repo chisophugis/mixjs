@@ -1,0 +1,3 @@
+DirectoryIndex mix.html
+AddHandler php5-script .php
+AddType font/opentype .otf

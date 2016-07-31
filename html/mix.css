@@ -1,0 +1,90 @@
+@font-face {
+  font-family: lmmono;
+  src: url('assets/lmmono8-regular.otf')
+}
+@font-face {
+  font-family: lmvtt;
+  src: url('assets/lmmonoprop10-regular.otf')
+}
+body {
+  background: #f0f0ff;
+  font-family: lmmono, monospace;
+  /* text-shadow: rgba(0,0,0,.5) 0px 0px 1px; */
+}
+div#asm {
+  float: left;
+  width: 500px;
+}
+div#processor {
+  float: left
+}
+div#memory {
+  float: right;
+  width: 250px;
+}
+div#bottom_bar {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background: #aca7d1;
+}
+pre {
+  margin: 0px;
+}
+pre.printer_paper {
+  display: inline-block;
+  margin: 10px;
+  font-family: lmmono, monospace;
+  font-size: 1em;
+  padding: 2em 3em;
+  color: black;
+  background: #fffadb;
+  border: 1px dotted black;
+}
+div#controls {
+  padding: 5px;
+}
+header {
+  display: block;
+  text-align: center;
+}
+textarea {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+li {
+    list-style-type: none;
+    display: block;
+    margin: 5px;
+    border: 1px solid #000;
+    padding: 1px 3px 1px 3px;
+}
+table {
+  border-collapse:  collapse;
+  border: 1px solid #000;
+}
+td:first-child:after {
+  content: ':';
+}
+td:first-child {
+  width: 3em;
+  border-style: none;
+  text-align: right;
+  background-color: #ccb4ce;
+}
+td {
+  padding: 0px;
+  margin: 0px;
+  width: 25px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+#proc_state ul {
+  padding: 0px;
+}
+
+#proc_state li {
+  margin: 0px;
+}
